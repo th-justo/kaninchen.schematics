@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "ComponentSchema",
+  "title": "Kaninchen Component Options",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Component name"
+    },
+    "path": {
+      "type": "string",
+      "default": "src/app/shared/components"
+    }
+  },
+  "required": ["name"]
+}

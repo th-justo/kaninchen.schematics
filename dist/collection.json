@@ -3,8 +3,8 @@
   "schematics": {
     "component": {
       "description": "Create component with Storybook and TDD",
-      "factory": "./dist/component/index#componentGenerator",
-      "schema": "./src/component/schema.json"
+      "factory": "./component/index#componentGenerator",
+      "schema": "./component/schema.json"
     }
   }
 }

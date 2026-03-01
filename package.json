@@ -1,7 +1,7 @@
 {
   "name": "@kaninchen/schematics",
   "version": "1.0.0",
-  "description": "Angular schematics for component with spec and stories",
+  "description": "Schematics para gerar componente com spec e story",
   "schematics": "./dist/collection.json",
   "main": "./dist/index.js",
   "files": [

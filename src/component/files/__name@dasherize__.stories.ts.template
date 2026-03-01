@@ -1,0 +1,30 @@
+import type { Meta, StoryObj } from '@storybook/angular';
+import { ${classify(name)}Component } from './${dasherize(name)}.component';
+
+const meta: Meta<${classify(name)}Component> = {
+  title: 'Components/${classify(name)}',
+  component: ${classify(name)}Component,
+  tags: ['autodocs'],
+  parameters: {
+    layout: 'centered'
+  }
+};
+
+export default meta;
+
+type Story = StoryObj<${classify(name)}Component>;
+
+export const Default: Story = {
+  args: {}
+};
+
+export const WithContent: Story = {
+  render: (args) => ({
+    props: args,
+    template: `
+      <app-${dasherize(name)}>
+        Example content
+      </app-${dasherize(name)}>
+    `
+  })
+};
