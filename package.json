@@ -1,27 +1,19 @@
 {
-  "name": "kaninchen.schematics",
+  "name": "@kaninchen/schematics",
   "version": "1.0.0",
-  "description": "",
-  "schematics": "./collection.json",
-  "main": "index.ts",
+  "description": "Angular schematics for component with spec and stories",
+  "schematics": "./dist/collection.json",
+  "main": "./dist/index.js",
   "files": [
-    "dist",
-    "collection.json",
-    "src/**/schema.json",
-    "src/**/files"
+    "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc && node copy-assets.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@angular-devkit/core": "^21.2.0",
     "@angular-devkit/schematics": "^21.2.0",
-    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
 }
