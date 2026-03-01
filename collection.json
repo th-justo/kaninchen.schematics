@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "component": {
+      "description": "Create component with Storybook and TDD",
+      "factory": "./dist/component/index#componentGenerator",
+      "schema": "./src/component/schema.json"
+    }
+  }
+}
