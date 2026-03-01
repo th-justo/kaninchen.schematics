@@ -44,23 +44,33 @@ npm install ../kaninchen.schematics
 
 Gerar componente:
 
-```
+```bash
 ng generate @kaninchen/schematics:component user-card
 ```
 
 Ou forma abreviada:
 
-`ng g @kaninchen/schematics:component user-card`
+```bash
+ng g @kaninchen/schematics:component user-card
+```
 
-Isso criará:
+Com estilo customizado (o padrão é `scss`):
+
+```bash
+ng g @kaninchen/schematics:component user-card --style=css
+```
+
+Isso criará, por exemplo:
 
 ```
+user-card.component.html
+user-card.component.scss
 user-card.component.ts  
 user-card.spec.ts  
 user-card.stories.ts
 ```
 
-Seguindo os padrões do projeto.
+Seguindo os padrões do projeto e injetando todo o boilerplete necessário!
 
 ---
 
@@ -73,6 +83,8 @@ src/
     schema.json  
     files/  
       __name@dasherize__.component.ts.template  
+      __name@dasherize__.component.html.template  
+      __name@dasherize__.component.__style__.template  
       __name@dasherize__.spec.ts.template  
       __name@dasherize__.stories.ts.template  
   
