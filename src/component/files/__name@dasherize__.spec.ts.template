@@ -1,18 +1,18 @@
 import { render, screen } from '@testing-library/angular';
-import { ${classify(name)}Component } from './${dasherize(name)}.component';
+import { <%= classify(name) %>Component } from './<%= dasherize(name) %>.component';
 
-describe('${classify(name)}Component', () => {
+describe('<%= classify(name) %>Component', () => {
 
   it('should render successfully', async () => {
-    await render(${classify(name)}Component);
+    await render(<%= classify(name) %>Component);
 
-    const element = screen.getByTestId('${dasherize(name)}');
+    const element = screen.getByTestId('<%= dasherize(name) %>');
     expect(element).toBeTruthy();
   });
 
   it('should display projected content if provided', async () => {
-    await render(${classify(name)}Component, {
-      template: `<app-${dasherize(name)}>Hello</app-${dasherize(name)}>`
+    await render(<%= classify(name) %>Component, {
+      template: `<app-<%= dasherize(name) %>>Hello</app-<%= dasherize(name) %>>`
     });
 
     expect(screen.getByText('Hello')).toBeTruthy();

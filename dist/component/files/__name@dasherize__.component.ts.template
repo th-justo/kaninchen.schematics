@@ -1,13 +1,14 @@
-import type { Meta, StoryObj } from '@storybook/angular';
-import { ${classify(name)}Component } from './${dasherize(name)}.component';
+import { Component } from '@angular/core';
 
-const meta: Meta<${classify(name)}Component> = {
-  title: 'Components/${classify(name)}',
-  component: ${classify(name)}Component,
-  tags: ['autodocs'],
-};
-
-export default meta;
-type Story = StoryObj<${classify(name)}Component>;
-
-export const Default: Story = {};
+@Component({
+  selector: 'app-<%= dasherize(name) %>',
+  standalone: true,
+  imports: [],
+  template: `
+    <div data-testid="<%= dasherize(name) %>">
+      <ng-content></ng-content>
+    </div>
+  `,
+  styleUrls: ['./<%= dasherize(name) %>.component.<%= style %>']
+})
+export class <%= classify(name) %>Component {}

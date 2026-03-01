@@ -10,8 +10,15 @@
     },
     "path": {
       "type": "string",
-      "default": "src/app/shared/components"
+      "default": "src/app/components"
+    },
+    "style": {
+      "type": "string",
+      "description": "The style type (css, scss, sass, less, etc.)",
+      "default": "scss"
     }
   },
-  "required": ["name"]
+  "required": [
+    "name"
+  ]
 }
