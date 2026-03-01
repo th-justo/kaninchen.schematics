@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "id": "ComponentSchema",
+  "$id": "ComponentSchema",
   "title": "Kaninchen Component Options",
   "type": "object",
   "properties": {

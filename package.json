@@ -1,5 +1,5 @@
 {
-  "name": "@kaninchen/schematics",
+  "name": "kaninchen.schematics",
   "version": "1.0.0",
   "description": "Schematics para gerar componente com spec e story",
   "schematics": "./dist/collection.json",
