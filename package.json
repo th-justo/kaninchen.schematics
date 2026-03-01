@@ -4,6 +4,12 @@
   "description": "",
   "schematics": "./collection.json",
   "main": "index.ts",
+  "files": [
+    "dist",
+    "collection.json",
+    "src/**/schema.json",
+    "src/**/files"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
