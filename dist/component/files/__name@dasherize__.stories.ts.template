@@ -19,7 +19,7 @@ export const Default: Story = {
 };
 
 export const WithContent: Story = {
-  render: (args) => ({
+  render: (args: any) => ({
     props: args,
     template: `
       <app-<%= dasherize(name) %>>

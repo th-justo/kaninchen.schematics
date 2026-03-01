@@ -4,11 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-<%= dasherize(name) %>',
   standalone: true,
   imports: [],
-  template: `
-    <div data-testid="<%= dasherize(name) %>">
-      <ng-content></ng-content>
-    </div>
-  `,
+  templateUrl: './<%= dasherize(name) %>.component.html',
   styleUrls: ['./<%= dasherize(name) %>.component.<%= style %>']
 })
 export class <%= classify(name) %>Component {}
