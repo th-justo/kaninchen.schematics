@@ -1,7 +1,5 @@
 # @kaninchen/schematics
 
-Geradores oficiais de código para a arquitetura **kaninchen.im.bau**.
-
 Este pacote fornece Angular Schematics personalizados que automatizam a criação de componentes, stories e testes seguindo os padrões arquiteturais do projeto.
 
 A intenção não é apenas gerar arquivos.  
