@@ -32,10 +32,6 @@ No projeto Angular:
 
 npm install @kaninchen/schematics
 
-Ou localmente durante desenvolvimento:
-
-npm install ../kaninchen.schematics
-
 ---
 
 ## Uso
